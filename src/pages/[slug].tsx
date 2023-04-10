@@ -37,6 +37,7 @@ const ProfilePage: NextPage<{username: string}>  = ({username}) => {
 };
 
 import { createProxySSGHelpers } from '@trpc/react-query/ssg';
+// import { createServerSideHelpers } from '@trpc/react-query/server';
 import { appRouter } from "~/server/api/root";
 import { prisma } from "~/server/db";
 import SuperJSON from "superjson";
