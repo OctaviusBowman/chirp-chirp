@@ -414,18 +414,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/query-core@npm:4.27.0":
-  version: 4.27.0
-  resolution: "@tanstack/query-core@npm:4.27.0"
-  checksum: 914b4f01ac75632f4603b650e9105f64c739b79250baf76aad16cee216f7bad6060c04eda0c70838fe61a5f6c17883e19fcc3075b2433a906539da95ce785796
+"@tanstack/query-core@npm:4.29.1":
+  version: 4.29.1
+  resolution: "@tanstack/query-core@npm:4.29.1"
+  checksum: e7a5a73e5e743411e39348bee3ded4b6c5dd3a70009e72e067e257d5f3d612bfe8df0998cddff6ad7a078e0bcf7a3c92ded669758ca697055472ce910e23a368
   languageName: node
   linkType: hard
 
-"@tanstack/react-query@npm:^4.28.0":
-  version: 4.28.0
-  resolution: "@tanstack/react-query@npm:4.28.0"
+"@tanstack/react-query@npm:^4.29.1":
+  version: 4.29.1
+  resolution: "@tanstack/react-query@npm:4.29.1"
   dependencies:
-    "@tanstack/query-core": 4.27.0
+    "@tanstack/query-core": 4.29.1
     use-sync-external-store: ^1.2.0
   peerDependencies:
     react: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -436,7 +436,7 @@ __metadata:
       optional: true
     react-native:
       optional: true
-  checksum: 7baa70d22b55cfa22f8a1d92ba9f8379c5436ee81fce3f0e7df4a8c29bb26bfef4a83759cf10f752b40ae2940099fcce88ce91a773240f4999ae91136980c6e3
+  checksum: 39417ffd3a6298b376f1d739dc2fe4c042c416902c216f61dff9b26dc80d68872770c90ac276db581c1094368f0b9038a34fab8b7df89b018f3960c938d73a57
   languageName: node
   linkType: hard
 
@@ -447,12 +447,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@trpc/client@npm:^10.18.0":
-  version: 10.18.0
-  resolution: "@trpc/client@npm:10.18.0"
+"@trpc/client@npm:^10.19.1":
+  version: 10.19.1
+  resolution: "@trpc/client@npm:10.19.1"
   peerDependencies:
-    "@trpc/server": 10.18.0
-  checksum: 1bc5b32cf40ba0019321a047977366ae4f7d7e2c49c677ca96dcc4d04a7a6ec0ddbae1e8d51eecfd95e79b4fb90bedda3e3a9557bbeaf6d36c35deb3d2238d71
+    "@trpc/server": 10.19.1
+  checksum: ff61687b50e63efdfa4e64af4c980333b91d0a8c4421efe386709d9c9e4835ae2ef51a9517cfa6510ecd0864654112cb52a4d7a132090c5eeb73a2a646f51923
   languageName: node
   linkType: hard
 
@@ -473,23 +473,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@trpc/react-query@npm:^10.18.0":
-  version: 10.18.0
-  resolution: "@trpc/react-query@npm:10.18.0"
+"@trpc/react-query@npm:^10.19.1":
+  version: 10.19.1
+  resolution: "@trpc/react-query@npm:10.19.1"
   peerDependencies:
     "@tanstack/react-query": ^4.18.0
-    "@trpc/client": 10.18.0
-    "@trpc/server": 10.18.0
+    "@trpc/client": 10.19.1
+    "@trpc/server": 10.19.1
     react: ">=16.8.0"
     react-dom: ">=16.8.0"
-  checksum: 67471dd99231e8d1f00a14fde31ce0eae9039e374e4bbc774fca96a1be74c60ad46e4a1ad1936bad963780fe9926bc4b75dc58d24d79a8058e4831e66c941480
+  checksum: cd2e6e1629e2fda03da7b491a511082ea2f42e350c918fba81d56c99e3f97c5260a35da8b6358f38ad8e3c2a6675731759de3533f3d98d42060708f7ff4c8a4e
   languageName: node
   linkType: hard
 
-"@trpc/server@npm:^10.18.0":
-  version: 10.18.0
-  resolution: "@trpc/server@npm:10.18.0"
-  checksum: 727ae5c12ea33063b13e054893d9b8ecd82b68a3cc93e54e25255181a45b3590c0ade0070237b68a7033e49c9b590ec743049eb7ebdef237c4b10732d1d0d432
+"@trpc/server@npm:^10.19.1":
+  version: 10.19.1
+  resolution: "@trpc/server@npm:10.19.1"
+  checksum: 28df78860741ae7fe2ffff5437333113e58360964f80f2fbb468155c9313a5404b8eeead2f0e0ffa7281791f876133299277161accb38f17479405b15cf79b61
   languageName: node
   linkType: hard
 
@@ -1270,11 +1270,11 @@ __metadata:
   dependencies:
     "@clerk/nextjs": ^4.14.2
     "@prisma/client": ^4.11.0
-    "@tanstack/react-query": ^4.28.0
-    "@trpc/client": ^10.18.0
+    "@tanstack/react-query": ^4.29.1
+    "@trpc/client": ^10.19.1
     "@trpc/next": ^10.18.0
-    "@trpc/react-query": ^10.18.0
-    "@trpc/server": ^10.18.0
+    "@trpc/react-query": ^10.19.1
+    "@trpc/server": ^10.19.1
     "@types/eslint": ^8.21.3
     "@types/node": ^18.15.5
     "@types/prettier": ^2.7.2
