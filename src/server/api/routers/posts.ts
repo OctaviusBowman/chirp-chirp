@@ -52,12 +52,7 @@ export const postsRouter = createTRPCRouter({
             console.log(ctx.prisma.post)
             if (!post) throw new TRPCError({ code: "NOT_FOUND" })
 
-            let mysteryBraceArray = (await addUserDataToPost([post]))[0]
-                console.log(mysteryBraceArray)
-
-            // return (await addUserDataToPost([post]))[0]
-
-            return mysteryBraceArray
+            return (await addUserDataToPost([post]))[0]
         }),
 
 
