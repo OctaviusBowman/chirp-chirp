@@ -44,6 +44,24 @@ const ratelimit = new Ratelimit({
 });
 
 export const postsRouter = createTRPCRouter({
+
+    getById: publicProcedure
+        .input(z.object({ id: z.string() }))
+        .query(async ({ ctx, input }) => {
+            const post = await ctx.prisma.post.findUnique({ where: { id: input.id } })
+            console.log(ctx.prisma.post)
+            if (!post) throw new TRPCError({ code: "NOT_FOUND" })
+
+            let mysteryBraceArray = (await addUserDataToPost([post]))[0]
+                console.log(mysteryBraceArray)
+
+            // return (await addUserDataToPost([post]))[0]
+
+            return mysteryBraceArray
+        }),
+
+
+
     getAll: publicProcedure.query(async ({ ctx }) => {
         const posts = await ctx.prisma.post.findMany({
             take: 100,

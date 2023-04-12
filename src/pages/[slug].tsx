@@ -1,3 +1,7 @@
+import { PageLayout } from "~/components/layout";
+import Image from "next/image";
+import { PostView } from "~/components/postview";
+import { generateSSGHelper } from "~/server/helpers/ssgHelper";
 import type { GetStaticProps, NextPage } from "next";
 import Head from "next/head";
 import { LoadingPage } from "~/components/loading";
@@ -52,22 +56,9 @@ const ProfilePage: NextPage<{ username: string }> = ({ username }) => {
     );
 };
 
-// import { createProxySSGHelpers } from '@trpc/react-query/ssg';
-import { createServerSideHelpers } from '@trpc/react-query/server';
-import { appRouter } from "~/server/api/root";
-import { prisma } from "~/server/db";
-import SuperJSON from "superjson";
-import { PageLayout } from "~/components/layout";
-import Image from "next/image";
-import { PostView } from "~/components/postview";
-
 
 export const getStaticProps: GetStaticProps = async (context) => {
-    const ssg = createServerSideHelpers({
-        router: appRouter,
-        ctx: { prisma, userId: null },
-        transformer: SuperJSON, // optional - adds superjson serialization
-    });
+    const ssg = generateSSGHelper();
 
     const slug = context.params?.slug
 
